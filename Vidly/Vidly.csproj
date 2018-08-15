@@ -240,7 +240,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API\CustomersController.cs" />
     <Compile Include="Controllers\API\MoviesController.cs" />
-    <Compile Include="Controllers\API\RentalsController.cs" />
+    <Compile Include="Controllers\API\NewRentalController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -249,7 +249,7 @@
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
     <Compile Include="Dtos\MovieGenreDto.cs" />
-    <Compile Include="Dtos\RentalDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -382,9 +382,13 @@
     <Compile Include="Migrations\201808151701318_UpdateDatabase.Designer.cs">
       <DependentUpon>201808151701318_UpdateDatabase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201808152049024_AddRentalAPI.cs" />
-    <Compile Include="Migrations\201808152049024_AddRentalAPI.Designer.cs">
-      <DependentUpon>201808152049024_AddRentalAPI.cs</DependentUpon>
+    <Compile Include="Migrations\201808152128049_AddRentalToDB.cs" />
+    <Compile Include="Migrations\201808152128049_AddRentalToDB.Designer.cs">
+      <DependentUpon>201808152128049_AddRentalToDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808152230325_AddNumberAvailableToMovie.cs" />
+    <Compile Include="Migrations\201808152230325_AddNumberAvailableToMovie.Designer.cs">
+      <DependentUpon>201808152230325_AddNumberAvailableToMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -767,8 +771,11 @@
     <EmbeddedResource Include="Migrations\201808151701318_UpdateDatabase.resx">
       <DependentUpon>201808151701318_UpdateDatabase.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201808152049024_AddRentalAPI.resx">
-      <DependentUpon>201808152049024_AddRentalAPI.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201808152128049_AddRentalToDB.resx">
+      <DependentUpon>201808152128049_AddRentalToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808152230325_AddNumberAvailableToMovie.resx">
+      <DependentUpon>201808152230325_AddNumberAvailableToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
