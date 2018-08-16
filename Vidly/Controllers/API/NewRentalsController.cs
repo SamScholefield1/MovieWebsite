@@ -13,12 +13,12 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.API
 {
-    public class NewRentalController : ApiController
+    public class NewRentalsController : ApiController
     {
 
         private ApplicationDbContext _context;
 
-        public NewRentalController()
+        public NewRentalsController()
         {
             _context = new ApplicationDbContext();
         }
